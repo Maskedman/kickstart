@@ -60,7 +60,7 @@ selinux-policy-targeted     # CIS 1.4.3
 -tftp-server                # CIS 2.1.8
 -talk-server                # CIS 2.1.10
 -xinetd                     # CIS 2.1.11
-@"X Window System"         # CIS 3.2
+#-@"X Window System"         # CIS 3.2
 -dhcp                       # CIS 3.5
 ntp                         # CIS 3.6
 postfix                     # CIS 3.16
