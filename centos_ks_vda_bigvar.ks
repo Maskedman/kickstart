@@ -34,7 +34,7 @@ logvol /tmp --vgname vg_root --name tmp --size=500 --fsoptions="nodev,nosuid,noe
 # CIS 1.1.9-1.1.0
 logvol /home --vgname vg_root --name home --size=1024 --fsoptions="nodev"
 # CIS 1.1.5
-logvol /var --vgname vg_root --name var --size=10240
+logvol /var --vgname vg_root --name var --size=5120
 # CIS 1.1.7
 logvol /var/log --vgname vg_root --name log --size=1024
 # CIS 1.1.8
@@ -71,9 +71,9 @@ cronie-anacron              # CIS 6.1.1
 vim
 tmux
 tree
-epel-release
+#epel-release
 open-vm-tools
-htop
+#htop
 # pam_passwdqc                # CIS 6.3.3
 %end
 
@@ -295,5 +295,8 @@ monitoring with no expectation of privacy.  Unauthorized
 access or use may subject you to disciplinary action and
 criminal prosecution.
 ***" > /etc/issue.net
+
+yum -y install epel-release
+yum -y install htop
 
 %end
