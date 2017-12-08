@@ -2,7 +2,7 @@
 #
 
 install
-url --url=http://mirror.umd.edu/centos/7/os/x86_64/
+url --url=http://mirror.rit.edu/centos/7/os/x86_64/
 text
 lang en_US.UTF-8
 keyboard us
